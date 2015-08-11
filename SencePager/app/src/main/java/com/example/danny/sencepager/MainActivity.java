@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
     }
        */
     private  Button mButton;
+    private  Button mButton1;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,5 +50,13 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        mButton1 = (Button) findViewById(R.id.button);
+        mButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.exit(1);
+            }
+        });
+
     }
 }
