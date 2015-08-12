@@ -15,48 +15,40 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-    /*
-}
-    private ListView<View>  listViews;
-    private TextView   t1,t2,t3;
-    private  ImageView cursor;
-    private  int offset = 0;
-    private  int bmpW;
-    private  int currIndex = 0;
 
-    public  void InitTextView(){
-        t1 = (TextView)findViewById(R.id.text1);
-        t2 = (TextView)findViewById(R.id.text2);
-        t3 =(TextView) findViewById(R.id.text3);
-        t1.setOnClickListener(new MyOnClickListener(0));
-    }
-       */
-    private  Button mButton;
     private  Button mButton1;
+    private  Button mButton2;
+    private  Button mButton3;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mButton = (Button)findViewById(R.id.button3);
-        mButton.setOnClickListener(new View.OnClickListener() {
+        mButton1 = (Button)findViewById(R.id.button1);
+        mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-               // intent.setAction("android.intent.action.View");
-               // Uri address =Uri.parse("www.baidu.com");
-                //intent.setData(address);
-
-                startActivity(intent);
+                 startActivity(intent);
             }
         });
-        mButton1 = (Button) findViewById(R.id.button);
-        mButton1.setOnClickListener(new View.OnClickListener() {
+        mButton2 = (Button) findViewById(R.id.button2);
+        mButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.exit(1);
             }
         });
+        mButton3 = (Button) findViewById(R.id.button3);
+        mButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,myViewPager.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

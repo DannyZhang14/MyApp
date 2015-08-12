@@ -20,6 +20,10 @@
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2" >
         </activity>
+        <activity
+            android:name=".myViewPager"
+            android:label="@string/title_activity_my_view_pager" >
+        </activity>
     </application>
 
 </manifest>
