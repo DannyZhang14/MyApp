@@ -1,10 +1,13 @@
 package com.example.danny.sencepager;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,15 +31,38 @@ public class MainActivity extends Activity {
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-                 startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
             }
         });
         mButton2 = (Button) findViewById(R.id.button2);
         mButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(1);
+                 new AlertDialog.Builder(MainActivity.this).setTitle("系统提示").setMessage("确认退出ViewPager？")
+                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                         @Override
+
+                         public void onClick(DialogInterface dialog, int which) {
+                              finish();
+                         }
+                         })
+                         .setNegativeButton("返回",new DialogInterface.OnClickListener() {
+                         @Override
+
+                        public void onClick(DialogInterface dialog, int which) {//响应事件
+
+                            // TODO Auto-generated method stub
+
+                            Log.i("alertdialog", " 请保存数据！");
+
+                        }
+
+                    }).show();
+
+
+
+//                System.exit(1);
             }
         });
         mButton3 = (Button) findViewById(R.id.button3);

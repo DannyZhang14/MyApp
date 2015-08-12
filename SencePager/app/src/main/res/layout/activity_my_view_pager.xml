@@ -43,18 +43,21 @@
                 android:layout_height="20dp"
                 android:layout_weight="1"
                 android:text="Page1"
+                android:gravity="center"
                 android:id="@+id/Pager1"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="20dp"
                 android:layout_weight="1"
                 android:text="Page2"
+                android:gravity="center"
                 android:id="@+id/Pager2"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="20dp"
                 android:layout_weight="1"
                 android:text="Page3"
+                android:gravity="center"
                 android:id="@+id/Pager3"/>
 
         </LinearLayout>
@@ -73,6 +76,7 @@
 
 
     </LinearLayout>
+   <!--<Android.-->
 
 
 </RelativeLayout>
