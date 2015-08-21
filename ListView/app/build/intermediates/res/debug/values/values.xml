@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/LME09/Desktop/App/lumi_xiaomi/ListView/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">雨松MOMO软件开发大讲堂</string>
+    <string name="hello">Hello World, aontrolActivity!</string>
+    <string name="version">版本1.1</string>
+</resources>
