@@ -100,11 +100,13 @@ public class MainActivity extends Activity {
                 age = tvAge.getText().toString();
                 tvName =(TextView) findViewById(R.id.name);
                 name=tvName.getText().toString();
+                //如果没有输入年龄那么就弹出一个对话框来提示用户应输入年龄，此时页面并不跳转。
                 if (age ==null){
                     Toast.makeText(MainActivity.this,"请输入年龄",Toast.LENGTH_LONG).show();
 
                 }
                     else {
+                    //第一个参数是传递到下一个页面所需要的的值，第二个参数是在这一个activity中的值
                     i.putExtra("a", age);
                     i.putExtra("b", name);
                     i.setClass(MainActivity.this, showinfo.class);

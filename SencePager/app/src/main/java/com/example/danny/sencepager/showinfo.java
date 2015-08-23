@@ -24,12 +24,12 @@ public class showinfo extends ActionBarActivity {
         Intent i =getIntent();
         name =i.getStringExtra("b");
         age =i.getStringExtra("a");
+        tvName2.setText(name);
+        tvAge2.setText(age);
+        //如果年龄是为空的则设置年龄显示为X
         if (age == null){
             tvAge2.setText("X");
         }
-        tvName2.setText(name);
-        tvAge2.setText(age);
-
     }
 
 
