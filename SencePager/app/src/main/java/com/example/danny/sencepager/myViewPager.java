@@ -34,6 +34,7 @@ public class myViewPager extends Activity {
         setContentView(R.layout.activity_my_view_pager);
 
     }
+    /*
     private void InitTextView(){
         TextView t1 = (TextView) findViewById(R.id.Pager1);
         TextView t2 = (TextView) findViewById(R.id.Pager2);
@@ -53,7 +54,7 @@ public class myViewPager extends Activity {
         }
     }
 
-
+/
     private  void InitViewPager(){
         mPager = (ViewPager) findViewById(R.id.vPager);
         listViews = new ArrayList<View>();
@@ -109,10 +110,6 @@ public class myViewPager extends Activity {
     }
 
 
-    private void InitImageView(){
-        cursor =(ImageView) findViewById(R.id.cursor);
-        bmpW = Bitmap
 
-    }
-
+*/
 }

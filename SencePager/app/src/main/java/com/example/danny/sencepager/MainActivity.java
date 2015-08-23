@@ -16,12 +16,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
     private  Button mButton1;
     private  Button mButton2;
     private  Button mButton3;
+    private  Button mButton4;
+    private  Button mButton5;
+    private TextView tvName;
+    private  TextView tvAge;
+    private String name;
+    private String   age;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +79,37 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this,myViewPager.class);
                 startActivity(intent);
+            }
+        });
+
+        mButton4 =(Button) findViewById(R.id.button4);
+        mButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Toast.makeText(MainActivity.this,getString(R.string.version),Toast.LENGTH_LONG).show();
+            }
+        });
+
+        mButton5 =(Button) findViewById(R.id.button5);
+
+        mButton5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                tvAge =(TextView) findViewById(R.id.age);
+                age = tvAge.getText().toString();
+                tvName =(TextView) findViewById(R.id.name);
+                name=tvName.getText().toString();
+                if (age ==null){
+                    Toast.makeText(MainActivity.this,"请输入年龄",Toast.LENGTH_LONG).show();
+
+                }
+                    else {
+                    i.putExtra("a", age);
+                    i.putExtra("b", name);
+                    i.setClass(MainActivity.this, showinfo.class);
+                    startActivity(i);
+                    }
             }
         });
 

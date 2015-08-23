@@ -16,7 +16,7 @@
         />
     <include
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:id="@+id/bottom"
         layout="@layout/bottomcontent"
@@ -24,7 +24,7 @@
     <fragment
         android:name="com.example.danny.sencepager.ContentFragment"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/fragment_content"
         android:layout_below="@+id/fragment_tittle"
         android:layout_above="@+id/bottom"/>

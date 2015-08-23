@@ -5,4 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_my_view_pager">myViewPager</string>
+    <string name="version">版本1.1</string>
+    <string name="showinfo">点击查看信息</string>
+    <string name="title_activity_showinfo">" 产看个人信息"</string>
+    <string name="baiduyixia">百度一下</string>
 </resources>

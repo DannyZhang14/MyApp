@@ -21,16 +21,12 @@ public class Main2Activity extends Activity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Uri uri = Uri.parse("http://www.baidu.com");
+                 Uri uri = Uri.parse("http://www.baidu.com");
                 Intent intent = new Intent();
-               // intent.setAction("android.intent.action.View");
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.setData(uri);
                 startActivity(intent);
-//                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.baidu.com"));
-//                it.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
-//                startActivity(it);
+
 
             }
         });

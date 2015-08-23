@@ -24,6 +24,10 @@
             android:name=".myViewPager"
             android:label="@string/title_activity_my_view_pager" >
         </activity>
+        <activity
+            android:name=".showinfo"
+            android:label="@string/title_activity_showinfo" >
+        </activity>
     </application>
 
 </manifest>
