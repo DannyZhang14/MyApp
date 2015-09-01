@@ -36,6 +36,10 @@
             android:name=".AlarmClockSetting"
             android:label="@string/title_activity_alarm_clock_setting" >
         </activity>
+        <activity
+            android:name=".ShareReference"
+            android:label="@string/title_activity_share_reference" >
+        </activity>
     </application>
 
 </manifest>

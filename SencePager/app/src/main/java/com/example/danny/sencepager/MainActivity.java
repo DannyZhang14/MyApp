@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
     private  Button mButton4;
     private  Button mButton5;
     private  Button mButton6;
+    private  Button mButton7;
     private  TextView tvName;
     private  TextView tvAge;
     private  ImageButton mImageButton;
@@ -135,5 +136,16 @@ public class MainActivity extends Activity {
                 startActivity(i);
             }
         });
+        mButton7 = (Button) findViewById(R.id.button7);
+        mButton7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent();
+                i.setClass(MainActivity.this,ShareReference.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 }

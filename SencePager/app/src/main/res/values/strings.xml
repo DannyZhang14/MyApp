@@ -12,4 +12,8 @@
     <string name="detail">请输入您要搜索的内容</string>
     <string name="listview">listview</string>
     <string name="title_activity_alarm_clock_setting">警戒设置</string>
+    <string name="title_activity_share_reference">shareReference</string>
+    <string name="readdata">点击查看上一个按键存储的ShareReference</string>
+    <string name="writedata">点击存储一个ShareReference</string>
+    <string name="sharereference">ShareReference</string>
 </resources>

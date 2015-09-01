@@ -63,6 +63,7 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:id="@+id/button7"
+        android:text="@string/sharereference"
         />
     <Button
         android:layout_width="fill_parent"
