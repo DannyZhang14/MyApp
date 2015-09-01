@@ -28,6 +28,14 @@
             android:name=".showinfo"
             android:label="@string/title_activity_showinfo" >
         </activity>
+        <activity
+            android:name=".listview"
+            android:label="listview" >
+        </activity>
+        <activity
+            android:name=".AlarmClockSetting"
+            android:label="@string/title_activity_alarm_clock_setting" >
+        </activity>
     </application>
 
 </manifest>

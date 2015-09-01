@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -25,15 +26,25 @@ public class MainActivity extends Activity {
     private  Button mButton3;
     private  Button mButton4;
     private  Button mButton5;
-    private TextView tvName;
+    private  Button mButton6;
+    private  TextView tvName;
     private  TextView tvAge;
-    private String name;
-    private String   age;
+    private  ImageButton mImageButton;
+    private  String name;
+    private  String   age;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mImageButton = (ImageButton)findViewById(R.id.buttonImage);
+        mImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         mButton1 = (Button)findViewById(R.id.button1);
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,6 +126,14 @@ public class MainActivity extends Activity {
             }
         });
 
-
+        mButton6 = (Button) findViewById(R.id.button6);
+        mButton6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent();
+                i.setClass(MainActivity.this,listview.class);
+                startActivity(i);
+            }
+        });
     }
 }

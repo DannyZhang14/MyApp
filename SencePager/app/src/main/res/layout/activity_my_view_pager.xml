@@ -29,7 +29,11 @@
         android:layout_below="@+id/linearLayout"
         android:layout_marginTop="3dp">
 
-
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969"
+            />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
