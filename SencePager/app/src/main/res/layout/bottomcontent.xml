@@ -70,6 +70,7 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:id="@+id/button8"
+        android:text="SeekBar"
         />
 </LinearLayout>
 

@@ -16,4 +16,7 @@
     <string name="readdata">点击查看上一个按键存储的ShareReference</string>
     <string name="writedata">点击存储一个ShareReference</string>
     <string name="sharereference">ShareReference</string>
+    <string name="title_activity_volumeseekbar">VolumeSetting</string>
+    <string name="system_seekbar_text">系统SeekBar</string>
+    <string name="self_seekbar_text">自定义SeekBar</string>
 </resources>

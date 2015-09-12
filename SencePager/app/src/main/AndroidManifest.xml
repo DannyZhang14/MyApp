@@ -40,6 +40,10 @@
             android:name=".ShareReference"
             android:label="@string/title_activity_share_reference" >
         </activity>
+        <activity
+            android:name=".volumeseekbar"
+            android:label="@string/title_activity_volumeseekbar" >
+        </activity>
     </application>
 
 </manifest>

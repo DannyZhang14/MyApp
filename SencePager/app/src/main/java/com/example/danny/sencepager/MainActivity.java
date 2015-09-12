@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
     private  Button mButton5;
     private  Button mButton6;
     private  Button mButton7;
+    private  Button mButton8;
     private  TextView tvName;
     private  TextView tvAge;
     private  ImageButton mImageButton;
@@ -89,7 +90,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this,myViewPager.class);
+              //  intent.setClass(MainActivity.this,myViewPager.class);
                 startActivity(intent);
             }
         });
@@ -143,6 +144,15 @@ public class MainActivity extends Activity {
                 Intent i =new Intent();
                 i.setClass(MainActivity.this,ShareReference.class);
                 startActivity(i);
+            }
+        });
+        mButton8 = (Button) findViewById(R.id.button8);
+        mButton8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,volumeseekbar.class);
+                startActivity(intent);
             }
         });
 
