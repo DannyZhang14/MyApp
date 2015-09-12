@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".baiduyixia"
             android:label="@string/title_activity_main2" >
         </activity>
         <activity
@@ -43,6 +43,10 @@
         <activity
             android:name=".volumeseekbar"
             android:label="@string/title_activity_volumeseekbar" >
+        </activity>
+        <activity
+            android:name=".mywebview"
+            android:label="@string/title_activity_mywebview" >
         </activity>
     </application>
 

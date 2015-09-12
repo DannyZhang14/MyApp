@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Main2Activity extends Activity {
+public class baiduyixia extends Activity {
     private Button mButton;
     private EditText editText;
     private String mUrlAddress;
@@ -19,18 +19,17 @@ public class Main2Activity extends Activity {
         setContentView(R.layout.baiduyixia);
         editText = (EditText) findViewById(R.id.addresscontent);
         mUrlAddress=editText.getText().toString();
-        mUrlAddress ="https://www.baidu.com";
+
 
         //点击事件的方法
         mButton = (Button) findViewById(R.id.search);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 Uri uri = Uri.parse(mUrlAddress);
-                Intent intent = new Intent();
 
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.setData(uri);
+                Intent intent = new Intent();
+                intent.putExtra("myUrlAddress",mUrlAddress);
+                intent.setClass(baiduyixia.this,mywebview.class);
                 startActivity(intent);
 
 

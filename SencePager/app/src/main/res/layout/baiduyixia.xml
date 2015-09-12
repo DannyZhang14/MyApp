@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.danny.sencepager.Main2Activity"
+    tools:context="com.example.danny.sencepager.baiduyixia"
     android:orientation="vertical">
     <fragment
         android:id="@+id/fragment_tittle"
@@ -36,11 +36,10 @@
     <EditText
         android:id="@+id/addresscontent"
         android:layout_marginLeft="60dp"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:text="@string/detail"
-        android:textColor="#ff0000"
-        android:gravity="center"/>
+        android:hint="@string/detail"
+        android:gravity="left"/>
     <Button
         android:id="@+id/search"
         android:layout_width="wrap_content"
