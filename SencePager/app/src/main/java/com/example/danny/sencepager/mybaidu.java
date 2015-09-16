@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class baiduyixia extends Activity {
+public class mybaidu extends Activity {
     private Button mButton;
     private EditText editText;
     private String mUrlAddress;
@@ -26,10 +26,9 @@ public class baiduyixia extends Activity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent();
-                intent.putExtra("myUrlAddress",mUrlAddress);
-                intent.setClass(baiduyixia.this,mywebview.class);
+                intent.setClass(mybaidu.this,mywebview.class);
+                intent.putExtra("searchurl",mUrlAddress);
                 startActivity(intent);
 
 

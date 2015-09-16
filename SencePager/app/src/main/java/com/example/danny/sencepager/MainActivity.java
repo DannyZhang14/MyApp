@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, baiduyixia.class);
+                Intent intent = new Intent(MainActivity.this, mybaidu.class);
                 startActivity(intent);
             }
         });
@@ -146,7 +146,6 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this,volumeseekbar.class);
                 startActivity(intent);
-
             }
         });
 

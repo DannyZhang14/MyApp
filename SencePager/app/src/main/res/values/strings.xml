@@ -9,15 +9,15 @@
     <string name="showinfo">点击查看信息</string>
     <string name="title_activity_showinfo">" 产看个人信息"</string>
     <string name="baiduyixia">百度一下</string>
-    <string name="detail">请输入您要搜索的内容</string>
+    <string name="detail">请输入您要搜索的地址</string>
     <string name="listview">listview</string>
     <string name="title_activity_alarm_clock_setting">警戒设置</string>
     <string name="title_activity_share_reference">shareReference</string>
     <string name="readdata">点击查看上一个按键存储的ShareReference</string>
     <string name="writedata">点击存储一个ShareReference</string>
-    <string name="sharereference">ShareReference</string>
+    <string name="sharereference">消息推送</string>
     <string name="title_activity_volumeseekbar">VolumeSetting</string>
     <string name="system_seekbar_text">系统SeekBar</string>
     <string name="self_seekbar_text">自定义SeekBar</string>
-    <string name="title_activity_mywebview">mywebview</string>
+    <string name="title_activity_mywebview">我的WebView</string>
 </resources>

@@ -16,7 +16,6 @@ public class volumeseekbar extends Activity implements SeekBar.OnSeekBarChangeLi
     private SeekBar  mSystem;
     private SeekBar  mSelf;
 
-
     @Override
     protected void onResume() {
         SharedPreferences sharedPreferences = getSharedPreferences("SystemSeekbar",Activity.MODE_PRIVATE);
@@ -29,7 +28,6 @@ public class volumeseekbar extends Activity implements SeekBar.OnSeekBarChangeLi
         mselftextview.setText(getResources().getText(R.string.self_seekbar_text)+selfvalue);
         int i2=Integer.parseInt(selfvalue);
         mSelf.setProgress(i2);
-
         super.onResume();
     }
 
@@ -40,7 +38,6 @@ public class volumeseekbar extends Activity implements SeekBar.OnSeekBarChangeLi
         mdefaulttextview = (TextView) findViewById(R.id.defaulttextview);
         mSystem = (SeekBar) findViewById(R.id.systemdef);
         mSystem.setOnSeekBarChangeListener(this);
-
 
         mselftextview  = (TextView) findViewById(R.id.selftextview);
         mSelf = (SeekBar) findViewById(R.id.self);
@@ -69,15 +66,10 @@ public class volumeseekbar extends Activity implements SeekBar.OnSeekBarChangeLi
                 final  String systemvalue;
                 systemvalue=String.valueOf(seekBar.getProgress());
                 mdefaulttextview.setText(getResources().getText(R.string.system_seekbar_text)+":"+String.valueOf(seekBar.getProgress()));
-
-
-
                 editor.putString("systemvolumvalue",systemvalue);
                 editor.commit();
                 break;
-
-
-            }
+             }
             case R.id.self:{
                 String selfvalue;
                 selfvalue=String.valueOf(seekBar.getProgress());
@@ -89,8 +81,6 @@ public class volumeseekbar extends Activity implements SeekBar.OnSeekBarChangeLi
             default:
                 break;
         }
-
-
-    }
+ }
 
 }

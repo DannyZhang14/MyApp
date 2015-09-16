@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".baiduyixia"
+            android:name=".mybaidu"
             android:label="@string/title_activity_main2" >
         </activity>
         <activity
