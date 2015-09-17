@@ -20,4 +20,5 @@
     <string name="system_seekbar_text">系统SeekBar</string>
     <string name="self_seekbar_text">自定义SeekBar</string>
     <string name="title_activity_mywebview">我的WebView</string>
+    <string name="title_activity_listview2">listview2</string>
 </resources>

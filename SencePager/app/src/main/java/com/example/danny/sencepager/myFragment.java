@@ -22,7 +22,7 @@ public class myFragment extends Fragment {
         mImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"I am an ImageButton in TittleFragment!",Toast.LENGTH_SHORT).show();
+                getActivity().finish();
             }
         });
         return view;
