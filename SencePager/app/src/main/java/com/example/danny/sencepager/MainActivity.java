@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, mybaidu.class);
+                Intent intent = new Intent(MainActivity.this, baiduyixia.class);
                 startActivity(intent);
             }
         });
@@ -63,11 +63,11 @@ public class MainActivity extends Activity {
                          .setNegativeButton("返回",new DialogInterface.OnClickListener() {
                          @Override
 
-                        public void onClick(DialogInterface dialog, int which) {
+                        public void onClick(DialogInterface dialog, int which) {//响应事件
 
                             // TODO Auto-generated method stub
 
-                            Log.i("alertdialog", " Log控制台，在Log level 里边选择info来查看log信息！");
+                            Log.i("alertdialog", " 请保存数据！");
 
                         }
 
@@ -92,9 +92,7 @@ public class MainActivity extends Activity {
         mButton4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent i = new Intent();
-                i.setClass(MainActivity.this,listview2.class);
-                startActivity(i);
+                Toast.makeText(MainActivity.this,getString(R.string.version),Toast.LENGTH_LONG).show();
             }
         });
 
@@ -148,6 +146,7 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this,volumeseekbar.class);
                 startActivity(intent);
+
             }
         });
 

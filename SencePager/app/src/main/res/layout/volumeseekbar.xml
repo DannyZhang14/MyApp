@@ -15,7 +15,7 @@
 
     <TextView
         android:id="@+id/defaulttextview"
-        android:text=""
+        android:text="@string/system_seekbar_text"
         android:layout_marginLeft="23px"
         android:textSize="20dp"
         android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
         android:layout_marginLeft="23px"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="@string/self_seekbar_text"
         android:textSize="20dp"/>
     <SeekBar
         android:id="@+id/self"

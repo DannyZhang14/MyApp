@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class listview extends ListActivity {
-
+    //private static final String[] COUNTRIES = new String[]{"China","Russia","English","America","France"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,6 @@ public class listview extends ListActivity {
         setListAdapter(new  TextImageAdapter(this));
     }
     private class TextImageAdapter extends BaseAdapter{
-        //这个Adapter就是来把数据和图片逐行填充到每一个list里边
         private Context mContext;
         public TextImageAdapter(Context context){
             this.mContext=context;
@@ -74,7 +73,6 @@ public class listview extends ListActivity {
     }
 
 
-    //定义两个数组分别来放置String的值和image的位置
     private String[] texts = new String[]{"警戒","彩灯","闹钟"};
     private int[]  images = new int[]{R.mipmap.list_mute,R.mipmap.list_light,R.mipmap.list_ala};
 
